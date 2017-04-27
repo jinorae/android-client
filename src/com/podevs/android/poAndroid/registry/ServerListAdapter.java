@@ -67,10 +67,9 @@ public class ServerListAdapter extends ArrayAdapter<ServerListAdapter.Server> {
 			TextView connection = (TextView)view.findViewById(R.id.connection);
 			connection.setText(server.ip + ":" + server.port);
 			
-			/* To make them easier to be seen on dark background */
-			name.setTextColor(Color.WHITE);
-			players.setTextColor(Color.WHITE);
-			connection.setTextColor(Color.WHITE);
+            name.setTextColor(getContext().getResources().getColor(R.color.registry_servertext));
+            players.setTextColor(getContext().getResources().getColor(R.color.registry_servertext));
+            connection.setTextColor(getContext().getResources().getColor(R.color.registry_servertext));
 		}
 		return view;
 		

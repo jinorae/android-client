@@ -13,4 +13,17 @@
 <color name="poke_text_shadow_disabled">#ccffffff</color>
 <color name="pp_text_shadow_enabled">#ff333333</color>
 <color name="pp_text_shadow_disabled">#cc000000</color>
+
+<!-- sass's colors
+<color name="registry_bg">#3e6775</color>
+<color name="registry_subtext">#9e9e9e</color>
+<color name="registry_servertext">#bdbdbd</color>
+<color name="registry_buttonbar">#467584</color>
+-->
+
+<color name="registry_bg">#242f35</color>
+<color name="registry_subtext">#9e9e9e</color>
+<color name="registry_servertext">#bdbdbd</color>
+<color name="registry_buttonbar">#37474f</color>
+
 </resources>

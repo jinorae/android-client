@@ -4,9 +4,9 @@
     <string name="empty" translatable="false"></string>
     <string name="choosename">Trainer Name</string>
     <string name="app_name">Pokémon Online</string>
-    <string name="connect">Connect!</string>
+    <string name="connect">Connect</string>
     <string name="inputname">Trainer Name</string>
-    <string name="inputaddr">IP Address:Port</string>
+    <string name="inputaddr">Server Address</string>
     <string name="chooseaddr">Server Address</string>
     <string name="importteam">Import Team</string>
     <string name="viewpokemon">View Pokémon</string>

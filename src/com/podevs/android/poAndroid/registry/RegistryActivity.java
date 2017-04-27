@@ -95,6 +95,8 @@ public class RegistryActivity extends FragmentActivity implements ServiceConnect
 
         setContentView(R.layout.main);
 
+	RegistryActivity.this.setTitle("Connect to Server");
+
         prefs = getPreferences(MODE_PRIVATE);
 
 		editAddr = (EditText)RegistryActivity.this.findViewById(R.id.addredit);

@@ -32,3 +32,5 @@ proguard_logs/mapping.txt
 proguard_logs/seeds.txt
 *.dropbox
 out/artifacts/android_client/Dropbox/desktop.ini
+
+*-e
