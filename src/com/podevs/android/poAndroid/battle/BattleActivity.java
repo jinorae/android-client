@@ -1,8 +1,7 @@
 package com.podevs.android.poAndroid.battle;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
-import android.app.AlertDialog;
+import android.support.v7.app.AlertDialog;
 import android.app.Dialog;
 import android.content.ComponentName;
 import android.content.Context;
@@ -18,7 +17,7 @@ import android.os.IBinder;
 import android.os.Looper;
 import android.os.ResultReceiver;
 import android.os.SystemClock;
-import android.support.v4.app.FragmentActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
@@ -83,7 +82,7 @@ class MyResultReceiver extends ResultReceiver {
 }
 
 @SuppressLint("DefaultLocale")
-public class BattleActivity extends FragmentActivity implements MyResultReceiver.Receiver{
+public class BattleActivity extends AppCompatActivity implements MyResultReceiver.Receiver{
     private MyResultReceiver mRecvr;
     private static ComponentName servName = new ComponentName("com.podevs.android.pokemonresources", "com.podevs.android.pokemonresources.SpriteService");
 
@@ -454,7 +453,7 @@ public class BattleActivity extends FragmentActivity implements MyResultReceiver
     }
 
     public void onReceiveResult(int resultCode, Bundle resultData) {
-        if (resultCode != Activity.RESULT_OK)
+        if (resultCode != AppCompatActivity.RESULT_OK)
             return;
         String path = resultData.getString("path");
         if (resultData.getBoolean("me")) {

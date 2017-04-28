@@ -1,7 +1,8 @@
 package com.podevs.android.poAndroid.teambuilder;
 
 import android.app.Activity;
-import android.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -36,7 +37,7 @@ import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class TeambuilderActivity extends FragmentActivity {
+public class TeambuilderActivity extends AppCompatActivity {
 
 	ProgressDialog progressDialog;
 
@@ -106,20 +107,20 @@ public class TeambuilderActivity extends FragmentActivity {
 	/** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
-		String selection = PreferenceManager.getDefaultSharedPreferences(this).getString("theme_list", "-1");
-		TypedArray ar = getResources().obtainTypedArray(R.array.themeentriesid);
-		int len = ar.length();
-		int[] resIds = new int[len];
-		for (int i = 0; i < len; i++)
-			resIds[i] = ar.getResourceId(i, 0);
-		ar.recycle();
-		try {
-			Integer ii = Integer.parseInt(selection);
-			Themes.themeTeambuilder = resIds[ii];
-		} catch (Exception e) {
-			Themes.themeTeambuilder = R.style.AppTheme;
-		}
-		setTheme(Themes.themeTeambuilder);
+		//String selection = PreferenceManager.getDefaultSharedPreferences(this).getString("theme_list", "-1");
+		//TypedArray ar = getResources().obtainTypedArray(R.array.themeentriesid);
+		//int len = ar.length();
+		//int[] resIds = new int[len];
+		//for (int i = 0; i < len; i++)
+		//	resIds[i] = ar.getResourceId(i, 0);
+		//ar.recycle();
+		//try {
+		//	Integer ii = Integer.parseInt(selection);
+		//	Themes.themeTeambuilder = resIds[ii];
+		//} catch (Exception e) {
+		//	Themes.themeTeambuilder = R.style.AppTheme;
+		//}
+		//setTheme(Themes.themeTeambuilder);
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.teambuilder);

@@ -2,7 +2,7 @@ package com.podevs.android.poAndroid.teambuilder;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
+import android.support.v7.app.AppCompatActivity;
 import com.podevs.android.poAndroid.R;
 import com.podevs.android.poAndroid.Themes;
 import com.podevs.android.poAndroid.poke.TeamPoke;
@@ -15,7 +15,7 @@ import com.podevs.android.poAndroid.poke.TeamPoke;
  * Input/output: "pokemon": byte[], serialized representation of a TeamPoke
  *               "slot": int, the slot associated with the pokemon (returns the same given in entry, defaults to 0)
  */
-public class EditPokemonActivity extends FragmentActivity {
+public class EditPokemonActivity extends AppCompatActivity {
 	private TeamPoke poke = null;
 	private int slot = 0;
 	private String tier = "";

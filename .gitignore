@@ -34,3 +34,4 @@ proguard_logs/seeds.txt
 out/artifacts/android_client/Dropbox/desktop.ini
 
 *-e
+*.jks

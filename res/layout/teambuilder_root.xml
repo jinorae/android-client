@@ -8,6 +8,7 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:padding="8dp"
         android:orientation="vertical" >
 
         <TextView
@@ -15,7 +16,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/primary_info"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
+            android:textColor="@color/teambuilder_subhead"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
 
         <LinearLayout
             android:id="@+id/nameColor"
@@ -42,9 +46,16 @@
             android:layout_height="96dp" />
     </LinearLayout>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#90909090"
+        />
+
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:padding="8dp"
         android:orientation="vertical" >
 
         <TextView
@@ -52,7 +63,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/team"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
+            android:textColor="@color/teambuilder_subhead"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -71,6 +85,7 @@
             <Spinner
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
                 android:id="@+id/gens"/>
         </LinearLayout>
 
@@ -82,7 +97,7 @@
                 android:id="@+id/importteambutton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/editteam"
                 android:text="@string/importteam" />
 
             <Button
@@ -94,10 +109,17 @@
         </RelativeLayout>
     </LinearLayout>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#90909090"
+        />
+
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="0dip"
         android:layout_weight="1"
+        android:padding="8dp"
         android:orientation="vertical" >
 
         <TextView
@@ -105,13 +127,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/optional"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
+            android:textColor="@color/teambuilder_subhead"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
 
         <EditText
             android:id="@+id/trainerInfo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:hint="@string/trainerinfo"
             android:inputType="textMultiLine" />
 
@@ -119,7 +143,6 @@
             android:id="@+id/winning_message"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:hint="@string/winningmessage"
             android:inputType="textMultiLine" />
 
@@ -127,7 +150,6 @@
             android:id="@+id/losing_message"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:hint="@string/losingmessage"
             android:inputType="textMultiLine" />
     </LinearLayout>

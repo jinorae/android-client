@@ -41,18 +41,18 @@
 
 
 
-    <style name="ThemeA">
+    <style name="ThemeA" parent="@style/Theme.AppCompat">
         <item name="android:background">@drawable/battle_border_button_dark</item>
     </style>
 
-    <style name="ThemeAA">
+    <style name="ThemeAA" parent="@style/Theme.AppCompat">
         <item name="android:background">@drawable/battle_border_transparent_white</item>
     </style>
 
-    <style name="ThemeB">
+    <style name="ThemeB" parent="@style/Theme.AppCompat">
         <item name="android:background">@drawable/battle_border_button</item>
     </style>
-    <style name="ThemeBB">
+    <style name="ThemeBB" parent="@style/Theme.AppCompat">
         <item name="android:background">@drawable/battle_border_transparent</item>
     </style>
 

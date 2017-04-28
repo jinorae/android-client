@@ -1,9 +1,10 @@
 package com.podevs.android.poAndroid.teambuilder;
 
-import android.annotation.TargetApi;
 import android.app.Activity;
+import android.annotation.TargetApi;
+import android.support.v7.app.AppCompatActivity;
 import android.app.ActivityManager;
-import android.app.AlertDialog;
+import android.support.v7.app.AlertDialog;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -77,7 +78,7 @@ public class TrainerFragment extends Fragment {
 		
 		teamTier = (AutoCompleteTextView)v.findViewById(R.id.teamTier);
 		genChooser = (Spinner)v.findViewById(R.id.gens);
-		ArrayAdapter<CharSequence> genAdapter = new ArrayAdapter<CharSequence>(getActivity(), android.R.layout.simple_spinner_item);
+		ArrayAdapter<CharSequence> genAdapter = new ArrayAdapter<CharSequence>(getActivity(), android.R.layout.simple_spinner_dropdown_item);
 		for (int i = GenInfo.genMin(); i <= GenInfo.genMax(); i++) {
 			for (int j = 0; j <= GenInfo.maxSubgen(i); j++) {
 				genAdapter.add(GenInfo.name(new Gen(i, j)));

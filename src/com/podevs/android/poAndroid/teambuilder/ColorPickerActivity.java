@@ -1,6 +1,7 @@
 package com.podevs.android.poAndroid.teambuilder;
 
 import android.app.Activity;
+import android.support.v7.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.opengl.GLSurfaceView;
@@ -18,7 +19,7 @@ import android.widget.TextView;
 import com.podevs.android.poAndroid.R;
 
 
-public class ColorPickerActivity extends Activity {
+public class ColorPickerActivity extends AppCompatActivity {
     private GLSurfaceView mGLSurfaceView;
     private SeekBar mValueBar;
     private EditText mR;

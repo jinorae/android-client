@@ -1,6 +1,6 @@
 package com.podevs.android.poAndroid.pms;
 
-import android.app.Activity;
+import android.support.v7.app.AppCompatActivity;
 import android.app.NotificationManager;
 import android.content.ComponentName;
 import android.content.Context;
@@ -31,7 +31,7 @@ import com.podevs.android.utilities.TitlePageIndicator;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-public class PrivateMessageActivity extends Activity {
+public class PrivateMessageActivity extends AppCompatActivity {
 	private static class PMPrefs{
 		boolean timeStampPM = true;
 	}

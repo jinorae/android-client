@@ -47,6 +47,10 @@
                 android:summary="@string/notifications_pm_summary"
                 android:title="@string/notifications_pm_title"
                 android:defaultValue="true"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+            android:summary="@string/battle_summary"
+            android:title="@string/battle_title" >
         <CheckBoxPreference
                 android:key="crySound"
                 android:summary="@string/sound_notification_summary"

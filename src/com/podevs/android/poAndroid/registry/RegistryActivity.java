@@ -3,7 +3,7 @@ package com.podevs.android.poAndroid.registry;
 import android.Manifest;
 import android.app.ActivityManager;
 import android.app.ActivityManager.RunningServiceInfo;
-import android.app.AlertDialog;
+import android.support.v7.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.*;
 import android.content.pm.PackageManager;
@@ -15,7 +15,7 @@ import android.os.Environment;
 import android.os.IBinder;
 import android.preference.PreferenceManager;
 import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.FragmentActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.text.InputType;
 import android.util.Log;
 import android.view.*;
@@ -38,7 +38,7 @@ import com.podevs.android.utilities.Baos;
 import java.io.*;
 import java.net.URL;
 
-public class RegistryActivity extends FragmentActivity implements ServiceConnection, RegistryCommandListener {
+public class RegistryActivity extends AppCompatActivity implements ServiceConnection, RegistryCommandListener {
 
 	static final String TAG = "RegistryActivity";
 	static final int TEAMBUILDER_CODE = 1;
@@ -225,12 +225,6 @@ public class RegistryActivity extends FragmentActivity implements ServiceConnect
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.mainoptions, menu);
         return true;
-    }
-
-    @Override
-    public boolean onMenuItemSelected(int which, MenuItem item) {
-    	// XXX Placeholder
-    	return true;
     }
 
 	@Override

@@ -1,6 +1,6 @@
 package com.podevs.android.poAndroid.teambuilder;
 
-import android.app.AlertDialog;
+import android.support.v7.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
 import android.os.Bundle;

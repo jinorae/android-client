@@ -26,4 +26,6 @@
 <color name="registry_servertext">#bdbdbd</color>
 <color name="registry_buttonbar">#37474f</color>
 
+<color name="teambuilder_subhead">#009688</color>
+
 </resources>
